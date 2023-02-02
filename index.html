@@ -48,6 +48,7 @@
     <div class="icons-wrapper">
         <div class="icons">
             <ul>
+                <li><a class="icon" id="reload"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M2 12a9 9 0 0 0 9 9c2.39 0 4.68-.94 6.4-2.6l-1.5-1.5A6.706 6.706 0 0 1 11 19c-6.24 0-9.36-7.54-4.95-11.95C10.46 2.64 18 5.77 18 12h-3l4 4h.1l3.9-4h-3a9 9 0 0 0-18 0Z"/></svg></a></li>
                 <li><a class="icon" id="play"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M9.525 18.025q-.5.325-1.013.037Q8 17.775 8 17.175V6.825q0-.6.512-.888q.513-.287 1.013.038l8.15 5.175q.45.3.45.85t-.45.85Z"/></svg></a></li>
                 <li> <a class="icon" id="pause"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M8 18q-.825 0-1.412-.587Q6 16.825 6 16V8q0-.825.588-1.412Q7.175 6 8 6h8q.825 0 1.413.588Q18 7.175 18 8v8q0 .825-.587 1.413Q16.825 18 16 18Z"/></svg></a> </li>
                 <li> <a class="icon" id="unmute"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M8 15q-.425 0-.713-.288Q7 14.425 7 14v-4q0-.425.287-.713Q7.575 9 8 9h3l3.3-3.3q.475-.475 1.087-.213q.613.263.613.938v11.15q0 .675-.613.937q-.612.263-1.087-.212L11 15Z"/></svg></a> </li>
@@ -66,28 +67,57 @@ const pause = document.querySelector('#pause')
 const mute = document.querySelector('#mute')
 const unmute = document.querySelector('#unmute')
 
+const reload = document.querySelector('#reload')
+
 // Parts of the HTML DOM
 const video = document.querySelector('#video')
 const sections = document.querySelector('#sections')
+const background = document.querySelector('.background')
+
 
 // Pause Event
 pause.addEventListener('click', () => {
     video.style.opacity = '0';
     pause.style.display = 'none';
+    play.style.display = 'flex'
     play.style.opacity = '1';
     sections.style.opacity = '1';
     video.pause();
 
 });
 
-// Restart Event
-// video.currentTime = '0';
+// Video ended Event
+video.addEventListener('ended', () => {
+    pause.style.display = 'none';
+    reload.style.display = 'flex';
+    sections.style.opacity = '1';
+    video.style.opacity = '0';
+
+});
+//   Reload Event
+reload.addEventListener('click', () => {
+    video.style.opacity = '1';
+    sections.style.opacity = '0.5';
+    video.currentTime = '0';
+    reload.style.display = 'none';
+    pause.style.display = 'flex';
+
+    if (video.muted === false) {
+        video.play();
+        video.muted = false;
+    } else {
+        video.play()
+        video.muted = true;
+    }
+});
+  
 
 // Play Event
 play.addEventListener('click', () => {
     video.style.opacity = '1';
     video.play();
     pause.style.display = 'flex';
+    play.style.display = 'none';
     play.style.opacity = '0';
     sections.style.opacity = '0.5';
 

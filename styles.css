@@ -68,7 +68,7 @@ body {
 }
 
 #sections {
-
+    border-radius: 100%;
     display: flex;
     opacity: 0.5;
     gap: 2.5vh;
@@ -159,6 +159,7 @@ body {
     font-size: 7vh;
     color: #ffffff;
     opacity: 1;
+    cursor: pointer;
 }
 
 .nav-section a:focus {
@@ -217,12 +218,11 @@ body {
 }
 
 #play {
-
     opacity: 0;
+    display: none;
 }
 
 #pause {
-
     opacity: 1;
 
 }
@@ -232,6 +232,10 @@ body {
 }
 
 #mute {
+    display: none;
+}
+
+#reload {
     display: none;
 }
 
