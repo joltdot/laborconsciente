@@ -194,6 +194,7 @@ body {
     z-index: 12;
     cursor: pointer;
 
+
 }
 
 .icon:hover {
@@ -202,6 +203,7 @@ body {
     opacity: 1;
 
 }
+
 
 #play {
     opacity: 0;
