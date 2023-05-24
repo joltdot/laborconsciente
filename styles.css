@@ -108,7 +108,7 @@ body {
 
 .slogan {
     font-size: 2vh;
-    margin: -1vh;
+    margin: -0.5vh -1vh -1vh -0.5vh;
 
     color: #ffffff;
     font-weight: 600;
