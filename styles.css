@@ -3,8 +3,8 @@
 
 body {
     background-color: #5970D8;
-    color:#ffffff;
-    font-family: 'Open Sauce Two';
+    color: #ffffff;
+    font-family: 'Open Sauce One';
 }
 
 .container {
@@ -39,17 +39,17 @@ body {
 
 }
 
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9) {
     .bg-video {
-    width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9) {
     .bg-video {
-    width: auto;
-    height: 100%;
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -60,7 +60,7 @@ body {
     gap: 2.5vh;
     animation: breathing 2500ms infinite forwards;
     transition: 0.5s;
-    margin-right:8vh;
+    margin-right: 8vh;
 }
 
 @keyframes breathing {
@@ -77,13 +77,13 @@ body {
 }
 
 #sections:hover {
-    animation-play-state:paused;
+    animation-play-state: paused;
     opacity: 1;
 
 }
 
-.sections:focus  {
-    animation-play-state:paused;
+.sections:focus {
+    animation-play-state: paused;
     opacity: 1;
 }
 
@@ -93,23 +93,54 @@ body {
 
 .logo-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-self: center;
- 
+
+
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5vh;
 }
 
 .slogan {
     font-size: 2vh;
-    margin: -2.5vh;
-    text-align: center;
+    margin: -1vh;
+
     color: #ffffff;
     font-weight: 600;
 }
 
 
 .logo {
-    width: 50vh;
+    width: 15vh;
     z-index: 10;
+}
+
+.logo-bg {
+    transition: 0.5s;
+}
+
+.title-section h1 {
+    margin: -1.25vh;
+    font-size: 7vh;
+
+    line-height: 1.15;
+}
+
+.labor {
+    font-weight: 700;
+    letter-spacing: -0.3vh;
+}
+
+.consciente {
+    color: #004aad;
+    font-weight: 800;
+    transition: 0.5s;
+    letter-spacing: -0.5vh;
 }
 
 .nav-section {
@@ -117,8 +148,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    
-    
+
+
 }
 
 .nav-section ul {
@@ -137,7 +168,7 @@ body {
     text-decoration: none;
     color: inherit;
     transition: 0.5s;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 
@@ -226,4 +257,3 @@ body {
 #reload {
     display: none;
 }
-

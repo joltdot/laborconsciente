@@ -1,0 +1,319 @@
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family: 'Open Sauce One';
+
+    overflow-x: hidden;
+    max-width: 100%;
+
+}
+
+#title {
+    color: #5970D8;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 0;
+    align-self: center;
+    letter-spacing: -0.8vh;
+
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5vh;
+}
+
+.slogan {
+    font-size: 2vh;
+    margin: -1vh;
+
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.logo-section {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #5970D8;
+    padding: 3vh 5vh 3vh;
+
+
+    border-radius: 130px 0% 0% 130px;
+}
+
+
+
+.logo {
+    width: 15vh;
+    z-index: 10;
+}
+
+
+
+.logo-bg {
+    transition: 0.5s;
+}
+
+.title-section h1 {
+    margin: -1.25vh;
+    font-size: 7vh;
+
+    line-height: 1.15;
+}
+
+.labor {
+    font-weight: 700;
+    letter-spacing: -0.3vh;
+    color: white;
+}
+
+.consciente {
+    color: #004aad;
+    font-weight: 800;
+    transition: 0.5s;
+    letter-spacing: -0.5vh;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 3vh;
+
+
+
+}
+
+#menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: #5970D8;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 20vh;
+    margin-left: 3vh;
+    border-radius: 130px 130px 130px 130px;
+    transition: 0.3s;
+
+}
+
+#menu:hover {
+    width: 15vh;
+    height: 15vh;
+    margin-left: 5vh;
+    ;
+    cursor: pointer;
+}
+
+#menu span {
+    position: relative;
+    background: white;
+    width: 30%;
+    height: 1vh;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+.hovermenu .line-3 {
+    transform: rotate(45deg) translate(-30%, 30%);
+    width: 30%;
+
+
+}
+
+.hovermenu .line-1 {
+    transform: rotate(-45deg) translate(-30%, -40%);
+    width: 30%;
+
+}
+
+
+
+
+
+
+
+
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-bottom: 3vh;
+    background-color: #EDEBEB;
+    width: 100%;
+    border-radius: 50px 0px 0 50px;
+
+
+
+}
+
+.content {
+    margin: 6vh;
+}
+
+.toggle {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #5970D8;
+    color: white;
+    padding: 1vh;
+    border-radius: 50px 50px 50px 50px;
+    gap: 0.5vh;
+    width: max-content;
+
+
+}
+
+.toggle span {
+    cursor: pointer;
+    padding: 2vh;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.toggle span:hover {
+    background-color: #004aad;
+}
+
+.toggle .active {
+    background-color: #004aad;
+}
+
+#hover {
+    display: flex;
+    gap: 0.5vh;
+
+}
+
+#info-global {
+    display: none;
+
+}
+
+#info-nacional {
+    display: none;
+
+}
+
+
+
+
+.body-container h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 3vh;
+    margin-bottom: -1vh;
+}
+
+.nota-nacional img {}
+
+.right img {
+    width: 50%;
+}
+
+.body-container .description {
+    font-style: italic;
+
+}
+
+#nacional-section {
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+#local-section {
+    display: none;
+}
+
+.nota {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+
+.right {
+    width: 40%;
+    justify-items: flex-end;
+
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+}
+
+.footer h2 {
+    color: #5970D8;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 3vh;
+
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5970D8;
+
+    padding: 7vh 1vh 7vh 1vh;
+    border-radius: 130px 0% 0% 130px;
+    margin: 3vh 0 3vh 0;
+
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 5vh;
+    list-style: none;
+
+
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    padding: 1vh;
+    font-weight: 600;
+
+}
+
+.footer-nav a:hover {
+    font-size: 2em;
+
+}
