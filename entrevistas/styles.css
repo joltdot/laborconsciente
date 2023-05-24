@@ -193,6 +193,7 @@ body {
     border-radius: 50px 50px 50px 50px;
     gap: 0.5vh;
     width: max-content;
+    align-items: center;
 
 
 }
@@ -201,14 +202,40 @@ body {
     cursor: pointer;
     padding: 2vh;
     border-radius: 50px 50px 50px 50px;
+    opacity: 0.7;
+    transition: 0.15s ease-in-out;
+
 }
+
+
 
 .toggle span:hover {
     background-color: #004aad;
+    opacity: 1;
+
+
+
 }
+
+
 
 .toggle .active {
     background-color: #004aad;
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+
+.toggle:hover .active {
+    opacity: 0.5;
+    padding: 1.75vh;
+}
+
+.toggle .active:hover {
+    opacity: 1;
+
+
 }
 
 #hover {
@@ -298,4 +325,8 @@ p {
 .footer-nav a:hover {
     font-size: 2em;
 
+}
+
+.footer-nav a:not(:hover) {
+    opacity: 0.5;
 }

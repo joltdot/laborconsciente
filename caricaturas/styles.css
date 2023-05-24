@@ -125,7 +125,8 @@ body {
     width: 15vh;
     height: 15vh;
     margin-left: 5vh;
-    ;
+    background-color: #004aad;
+    border: #5970D8 10px solid;
     cursor: pointer;
 }
 
@@ -135,7 +136,8 @@ body {
     width: 30%;
     height: 1vh;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s;
+
 }
 
 
@@ -175,20 +177,20 @@ body {
 
 
 
-
 }
 
 .body-container h2 {
     font-size: 2.5rem;
-    line-height: 1.25;
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    line-height: 1;
+    margin-top: 4vh;
+    margin-bottom: -2vh;
 
 }
 
 .body-container iframe {
     border-radius: 20px;
     margin-top: 3vh;
+
 }
 
 .content {
@@ -205,6 +207,7 @@ body {
     border-radius: 50px 50px 50px 50px;
     gap: 0.5vh;
     width: max-content;
+    align-items: center;
 
 
 }
@@ -213,20 +216,64 @@ body {
     cursor: pointer;
     padding: 2vh;
     border-radius: 50px 50px 50px 50px;
+    opacity: 0.7;
+    transition: 0.15s ease-in-out;
+
 }
+
+
 
 .toggle span:hover {
     background-color: #004aad;
+    opacity: 1;
+
+
+
 }
+
+
 
 .toggle .active {
     background-color: #004aad;
+    opacity: 1;
+    transition: 0.3s;
+
 }
+
+
+.toggle:hover .active {
+    opacity: 0.5;
+    padding: 1.75vh;
+}
+
+.toggle .active:hover {
+    opacity: 1;
+
+
+}
+
+
 
 #hover {
     display: flex;
     gap: 0.5vh;
 
+}
+
+#one-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#two-section {
+
+    flex-direction: column;
+    display: none;
+}
+
+#three-section {
+    display: none;
+    flex-direction: column;
 }
 
 
@@ -236,6 +283,8 @@ p {
     text-align: justify;
     line-height: 1.5;
     font-size: 1.2rem;
+    margin-bottom: 1vh;
+
 }
 
 
@@ -260,10 +309,10 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: #5970D8;
-
     padding: 7vh 1vh 7vh 1vh;
+    justify-content: center;
     border-radius: 130px 0% 0% 130px;
-    margin: 3vh 0 3vh 0;
+
 
 }
 
@@ -286,6 +335,9 @@ p {
 }
 
 .footer-nav a:hover {
-    font-size: 2em;
+    font-size: 2rem;
+}
 
+.footer-nav a:not(:hover) {
+    opacity: 0.5;
 }
