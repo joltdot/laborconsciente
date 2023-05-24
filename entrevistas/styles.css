@@ -167,6 +167,18 @@ body {
 
 }
 
+.body-container h2 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+
+}
+
+.body-container img {
+    border-radius: 10px;
+}
+
 .content {
     margin: 6vh;
 }
@@ -205,62 +217,38 @@ body {
 
 }
 
-#info-global {
-    display: none;
 
-}
-
-#info-nacional {
-    display: none;
-
-}
-
-
-
-
-.body-container h2 {
-    font-size: 2.5rem;
-    line-height: 1;
-    margin-top: 3vh;
-    margin-bottom: -1vh;
-}
-
-
-
-
-
-.body-container .description {
-    font-style: italic;
-
-}
-
-#nacional-section {
-    display: flex;
-    flex-direction: row;
-
-
-
-}
-
-#local-section {
-    display: none;
-    flex-direction: row;
-}
-
-.nota {
-    display: flex;
-    flex-direction: column;
+#informe-section {
     width: 70%;
+
 }
 
+#lorisia-section {
+    width: 70%;
+    display: none;
+    flex-direction: column;
+}
 
+#maria-section {
+    width: 70%;
+    display: none;
+    flex-direction: column;
+}
 
+#carla-section {
+    width: 70%;
+    display: none;
+    flex-direction: column;
+}
 
 
 p {
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.2rem;
 }
+
+
 
 .footer {
     display: flex;
