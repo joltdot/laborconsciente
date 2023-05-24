@@ -55,17 +55,7 @@ body {
     z-index: 10;
 }
 
-.one {
-    display: flex
-}
 
-.two {
-    display: none;
-}
-
-.three {
-    display: none;
-}
 
 .logo-bg {
     transition: 0.5s;
@@ -191,8 +181,16 @@ body {
     margin-top: 3vh;
 }
 
+
 .content {
     margin: 6vh;
+
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
 .toggle {
@@ -229,7 +227,17 @@ body {
 
 }
 
+#one-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
 
+#two-section {
+    display: none;
+    flex-direction: column;
+    width: 70%;
+}
 
 
 p {
