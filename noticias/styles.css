@@ -203,6 +203,14 @@ body {
     display: flex;
     gap: 0.5vh;
 
+
+}
+
+.top {
+    display: flex;
+    gap: 2vh;
+
+
 }
 
 #info-global {
