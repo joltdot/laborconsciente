@@ -1,8 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/open-sauce-one');
 
+:root {
+    --main: #C85656;
+    --accent: #8F3030;
+}
 
 body {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     margin: 0;
     font-family: 'Open Sauce One';
@@ -13,12 +17,14 @@ body {
 }
 
 #title {
-    color: #5970D8;
+    color: var(--main);
     font-size: 6rem;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 0;
     align-self: center;
     letter-spacing: -0.8vh;
+
+
 
 }
 
@@ -30,10 +36,15 @@ body {
 }
 
 .slogan {
-    font-size: 2vh;
+    font-size: 0.8rem;
     margin: -1vh;
+    transform: translateY(4px);
+    text-align: right;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5vh;
+    border-radius: 30px;
 }
 
 .logo-section {
@@ -41,11 +52,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #5970D8;
+    background-color: var(--main);
     padding: 3vh 5vh 3vh;
-
-
+    position: sticky;
     border-radius: 130px 0% 0% 130px;
+    top: 0;
+    box-shadow: 0px 0px 10px var(--main);
 }
 
 
@@ -53,6 +65,7 @@ body {
 .logo {
     width: 15vh;
     z-index: 10;
+
 }
 
 .one {
@@ -69,6 +82,7 @@ body {
 
 .logo-bg {
     transition: 0.5s;
+    fill: var(--accent);
 }
 
 .title-section h1 {
@@ -85,7 +99,7 @@ body {
 }
 
 .consciente {
-    color: #004aad;
+    color: var(--accent);
     font-weight: 800;
     transition: 0.5s;
     letter-spacing: -0.5vh;
@@ -109,7 +123,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    background-color: #5970D8;
+    background-color: var(--main);
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -118,15 +132,16 @@ body {
     margin-left: 3vh;
     border-radius: 130px 130px 130px 130px;
     transition: 0.3s;
+    box-shadow: 0 0 10px var(--main);
 
 }
 
 #menu:hover {
     width: 15vh;
     height: 15vh;
-    margin-left: 5vh;
-    background-color: #004aad;
-    border: #5970D8 10px solid;
+    margin-left: 6vh;
+    background-color: var(--accent);
+    border: var(--main) 10px solid;
     cursor: pointer;
 }
 
@@ -138,6 +153,10 @@ body {
     border-radius: 5px;
     transition: 0.2s;
 
+}
+
+#menu:hover #title {
+    color: var(--accent);
 }
 
 
@@ -182,8 +201,9 @@ body {
 .body-container h2 {
     font-size: 2.5rem;
     line-height: 1;
-    margin-top: 4vh;
+    margin-top: 1vh;
     margin-bottom: -2vh;
+    color: white;
 
 }
 
@@ -201,13 +221,15 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    background-color: #5970D8;
+    background-color: var(--main);
     color: white;
     padding: 1vh;
     border-radius: 50px 50px 50px 50px;
     gap: 0.5vh;
     width: max-content;
     align-items: center;
+    box-shadow: 0px 0px 10px var(--accent);
+    transition: 0.3s;
 
 
 }
@@ -224,8 +246,9 @@ body {
 
 
 .toggle span:hover {
-    background-color: #004aad;
+    background-color: var(--accent);
     opacity: 1;
+    box-shadow: 0px 0px 10px var(--accent);
 
 
 
@@ -233,8 +256,12 @@ body {
 
 
 
+.toggle:hover {
+    box-shadow: inset 0px 0px 20px var(--accent);
+}
+
 .toggle .active {
-    background-color: #004aad;
+    background-color: var(--accent);
     opacity: 1;
     transition: 0.3s;
 
@@ -244,6 +271,7 @@ body {
 .toggle:hover .active {
     opacity: 0.5;
     padding: 1.75vh;
+
 }
 
 .toggle .active:hover {
@@ -260,15 +288,23 @@ body {
 
 }
 
+.section {
+    background-color: var(--main);
+    margin-top: 4vh;
+    padding: 4vh;
+    border-radius: 30px;
+    box-shadow: 0 0 10px var(--main);
+}
+
 #one-section {
     display: flex;
     flex-direction: column;
 }
 
 #two-section {
-
-    flex-direction: column;
     display: none;
+    flex-direction: column;
+
 }
 
 #three-section {
@@ -284,7 +320,7 @@ p {
     line-height: 1.5;
     font-size: 1.2rem;
     margin-bottom: 1vh;
-
+    color: white;
 }
 
 
@@ -297,9 +333,9 @@ p {
 }
 
 .footer h2 {
-    color: #5970D8;
+    color: var(--main);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-left: 3vh;
 
 }
@@ -308,11 +344,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5970D8;
+    background-color: var(--main);
     padding: 7vh 1vh 7vh 1vh;
     justify-content: center;
     border-radius: 130px 0% 0% 130px;
-
+    box-shadow: 0px 0px 10px var(--main);
 
 }
 
@@ -335,7 +371,7 @@ p {
 }
 
 .footer-nav a:hover {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .footer-nav a:not(:hover) {

@@ -88,16 +88,16 @@
                 <div class="title-section">
                     <h1 class="labor">Labor</h1>
                     <h1 class="consciente">Consciente</h1>
-                    <p class="slogan">Conoce tu realidad.</p>
+                    <p class="slogan">Conoce tu realidad</p>
 
                 </div>
             </div>
             <div class="nav-section">
                 <ul>
-                    <li><a href="noticias" class="nav-link" data-link>Noticias</a></li>
-                    <li><a href="entrevistas" class="nav-link" data-link>Entrevistas</a></li>
-                    <li><a href="caricaturas" class="nav-link" data-link>Caricaturas</a></li>
-                    <li><a href="nuestra-voz" class="nav-link" data-link>Nuestra voz</a></li>
+                    <li><a href="noticias" class="nav-link" id="noticias" data-link>Noticias</a></li>
+                    <li><a href="entrevistas" class="nav-link" id="entrevistas" data-link>Entrevistas</a></li>
+                    <li><a href="caricaturas" class="nav-link" id="caricaturas" data-link>Caricaturas</a></li>
+                    <li><a href="nuestra-voz" class="nav-link" id="nuestra-voz" data-link>Nuestra voz</a></li>
                 </ul>
             </div>
         </div>
@@ -142,7 +142,7 @@
     <script>
 
         // Play / Pause
-        const play = document.querySelector('#play')
+        const play = document.querySelector('#play');
         const pause = document.querySelector('#pause')
 
         // Mute / Unmute
@@ -156,6 +156,9 @@
         const video = document.querySelector('#video')
         const sections = document.querySelector('#sections')
         const background = document.querySelector('.background')
+        const bgVideo = document.querySelector('.bg-video')
+
+
 
 
         // Pause Event
@@ -226,6 +229,89 @@
         });
 
 
+        const body = document.querySelector('body')
+        const nav = document.querySelector('.nav-section ul')
+        const noticias = document.querySelector('#noticias')
+        const entrevistas = document.querySelector('#entrevistas')
+        const caricaturas = document.querySelector('#caricaturas')
+        const nuestravoz = document.querySelector('#nuestra-voz')
+        const consciente = document.querySelector('.consciente')
+        const logo = document.querySelector('.logo-bg')
+
+
+
+
+        nav.onmouseover = function () {
+            if (video.paused() === false) {
+                video.style.opacity = '0.1';
+                bgVideo.style.opacity = '0.1';
+
+                sections.style.opacity = '1';
+
+            }
+
+        }
+
+        nav.onmouseout = function () {
+            if (video.paused() === false) {
+                video.style.opacity = '';
+                bgVideo.style.opacity = '';
+                sections.style.opacity = '';
+
+            }
+
+        }
+
+
+
+        entrevistas.onmouseover = function () {
+            body.style.backgroundColor = '#35a874';
+            background.style.backgroundColor = '#35a874';
+            consciente.style.color = '#3a7d55';
+            logo.style.fill = '#3a7d55'
+        }
+
+        entrevistas.onmouseout = function () {
+            body.style.backgroundColor = '';
+            background.style.backgroundColor = '';
+            consciente.style.color = '';
+            logo.style.fill = '';
+        }
+
+
+
+
+        caricaturas.onmouseover = function () {
+            body.style.backgroundColor = '#C85656';
+            background.style.backgroundColor = '#C85656';
+            consciente.style.color = '#8F3030';
+            logo.style.fill = '#8F3030'
+        }
+
+        caricaturas.onmouseout = function () {
+            body.style.backgroundColor = '';
+            background.style.backgroundColor = '';
+            consciente.style.color = '';
+            logo.style.fill = '';
+
+
+        }
+
+        nuestravoz.onmouseover = function () {
+            body.style.backgroundColor = '#f99159';
+            background.style.backgroundColor = '#f99159';
+            consciente.style.color = '#c1613f';
+            logo.style.fill = '#c1613f'
+        }
+
+        nuestravoz.onmouseout = function () {
+            body.style.backgroundColor = '';
+            background.style.backgroundColor = '';
+            consciente.style.color = '';
+            logo.style.fill = '';
+
+
+        }
 
     </script>
 
