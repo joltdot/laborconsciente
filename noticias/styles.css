@@ -306,6 +306,8 @@ body {
 
 }
 
+
+
 .top {
     display: flex;
 
@@ -343,6 +345,7 @@ body {
     line-height: 1;
     margin-top: 1vh;
     margin-bottom: -1vh;
+    text-shadow: 0 0 10px var(--accent);
 }
 
 
@@ -380,7 +383,9 @@ body {
 }
 
 .nota img {
-    border-radius: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--accent);
+
 }
 
 
@@ -399,14 +404,14 @@ p {
 }
 
 .left {
-    width: 60%;
+    width: 70%;
 
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     align-items: flex-end;
     margin-right: 2vh;
     gap: 1vh;
@@ -436,6 +441,7 @@ p {
 
 .anuncio {
     width: 80%;
+
 }
 
 .footer {

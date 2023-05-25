@@ -192,12 +192,21 @@ body {
 
 }
 
-.body-container h2 {
+
+.right h2 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+}
+
+.articulo h2 {
     font-size: 2.5rem;
     line-height: 1.25;
     margin-top: 0vh;
     margin-bottom: 1vh;
 
+    text-shadow: 0 0 10px var(--accent);
 
 }
 
@@ -213,14 +222,14 @@ body {
 .left {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
 
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     align-items: flex-end;
     margin-right: 2vh;
     gap: 1vh;
@@ -232,7 +241,6 @@ body {
 .right h2 {
     color: var(--main);
     font-size: 3rem;
-
     font-weight: 900;
     letter-spacing: -0.3vh;
     text-align: right;

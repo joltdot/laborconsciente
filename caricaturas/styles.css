@@ -204,6 +204,7 @@ body {
     margin-top: 1vh;
     margin-bottom: -2vh;
     color: white;
+    text-shadow: 0 0 10px var(--accent);
 
 }
 
