@@ -187,12 +187,20 @@ body {
 
 }
 
-.body-container h2 {
+.left h2 {
     font-size: 2.5rem;
     line-height: 1.25;
     margin-top: 0vh;
     margin-bottom: 1vh;
     text-shadow: 0 0 10px var(--accent);
+}
+
+.right h2 {
+
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
 }
 
 
@@ -238,7 +246,7 @@ body {
 
     width: 80%;
     border-radius: 10px;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 
@@ -251,7 +259,7 @@ body {
 .toggle {
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px var(--main);
+
     background-color: var(--main);
     color: white;
     padding: 1vh;
@@ -259,7 +267,7 @@ body {
     gap: 0.5vh;
     width: max-content;
     align-items: center;
-
+    box-shadow: 0 0 10px var(--main);
     transition: 0.3s;
 
 }

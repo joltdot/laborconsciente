@@ -227,7 +227,7 @@ body {
     background-color: #EDEBEB;
     width: 100%;
     border-radius: 50px 0px 0 50px;
-    box-shadow: 0 0 10px #EDEBEB;
+
 
 
 
@@ -246,9 +246,9 @@ body {
     gap: 0.5vh;
     width: max-content;
     align-items: center;
-
+    box-shadow: 0 0 10px var(--main);
     transition: 0.3s;
-    box-shadow: 0px 0px 10px var(--accent);
+
 
 }
 
@@ -379,7 +379,7 @@ body {
     padding: 4vh;
 
     border-radius: 30px;
-    box-shadow: 0px 0px 10px var(--accent);
+    box-shadow: 0px 0px 10px var(--main);
 }
 
 .nota img {
@@ -436,7 +436,7 @@ p {
 
     width: 80%;
     border-radius: 10px;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 .anuncio {
